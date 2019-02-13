@@ -1,0 +1,168 @@
+*{
+    font-family: "Lato", "arial", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.clearrfix{
+    clear: both;
+}
+header{
+    padding: 0 40px;
+    height: 60px;
+    line-height: 70px;
+    .link-logo{
+        float: left;
+        img{
+            height: 20px;
+        }
+    }
+}
+
+nav{
+    float: right;
+    display: inline-block;
+    height: 60px;
+    line-height: 40px;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style: none;
+            display: inline-block;
+            &:hover{
+                background: #fafafa;
+                transition: all .2s ease-in-out;
+                a:first-child{
+                    color: #ff6e00;
+                }
+            }
+            a{
+                line-height:60px;
+                padding: 0 40px;
+                font-size: 14px;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+.icon-search{
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' width='512px' height='512px' viewBox='0 0 485.213 485.213' style='enable-background:new 0 0 485.213 485.213;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951 C282.44,363.906,363.909,282.437,363.909,181.955z M181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46 c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465 C318.424,257.208,257.206,318.416,181.956,318.416z' fill='%23adadad'/%3E%3Cpath d='M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324 c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z' fill='%23adadad'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    width: 20px;
+    height: 16px;
+    background-size: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.dropdown{
+    position: relative;
+    &:hover .dropdown-content{
+        display: block;
+    }
+    i.fa{
+        margin-left: 10px;
+    }
+    &-content{
+        display: none;
+        position: absolute;
+        border: 1px solid #c8c8c8;
+        min-width: 120px;
+        z-index: 2;
+        background: white;
+        ul{
+            li{
+                list-style: none;
+                width: 100%;
+                a{
+                    display: block;
+                    padding: 0 15px;
+                    font-size: 13px;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.sliders{
+    width: 100%;
+    .owl-theme .owl-nav [class*=owl-]{
+        margin: 0;
+        &:hover{
+            background: transparent;
+        }
+    }
+    .owl-theme .owl-dots{
+        position: absolute;
+        bottom: 20px;
+        right: 37px;
+        .owl-dot span{
+            background: #dfdfdf;
+            width: 14px;
+            height: 14px;
+        }
+        .owl-dot.active span{
+            border: 1px solid white;
+            background: #ff6e00;
+        }
+    }
+    .owl-carousel {
+        .owl-item img{
+            object-fit: cover;
+            height: 80vh;
+        }
+        .owl-stage-outer{
+            height: 80vh;
+        }
+        .owl-prev, .owl-next{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: 0;
+            outline: none;
+            &:hover{
+                span{
+                    background: rgba(128, 128, 128, 0.84);
+                }
+            }
+            span{
+                font-size: 44px;
+                padding: 10px 35px 20px 11px;
+                background: rgba(185, 185, 185, 0.66);
+                color: white;
+                transition: all .2s ease;
+            }
+        }
+        .owl-prev{
+            left: 0;
+            padding: 10px 35px 20px 11px;
+        }
+        .owl-next{
+            right: 0;
+            padding: 10px 11px 20px 35px;
+        }
+
+    }
+}
+
+.list-user{
+    padding: 30px 20px;
+    .content-user{
+        display: inline-block;
+        margin: auto;
+        text-align: center;
+        width: calc(100% / 3);
+        img{
+            border-radius: 50%;
+        }
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
+    }
+}
